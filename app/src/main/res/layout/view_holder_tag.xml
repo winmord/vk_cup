@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tag_view_holder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/layout_bg"
+    android:backgroundTint="@color/tag_color">
+
+    <TextView
+        android:id="@+id/tag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="SF Pro"
+        android:text="@string/tag_text"
+        android:textSize="16sp"
+        android:textFontWeight="590"
+        android:textColor="@color/white"
+        tools:targetApi="p" />
+
+    <View
+        android:id="@+id/tag_divider"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/divider_color" />
+
+    <ImageView
+        android:id="@+id/tag_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/tag_icon"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+</LinearLayout>

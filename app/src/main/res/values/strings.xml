@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VK_Cup</string>
+    <string name="later_button_text">Позже</string>
+    <string name="tags_description">Отметьте то, что вам интересно,\nчтобы настроить Дзен</string>
+    <string name="continue_button_text">Продолжить</string>
+    <string name="tag_text">Юмор</string>
+    <string name="tag_icon">tag icon</string>
+    <string name="set_dzen_text">Ваш настроенный Дзен</string>
+</resources>
