@@ -52,8 +52,6 @@ class FragmentTagList : Fragment() {
             override fun onClick(tag: Tag) {
                 tags.sortBy { !it.isClicked }
                 updateData(tags)
-                continueButton?.visibility =
-                    if (tags.any { it.isClicked }) View.VISIBLE else View.GONE
             }
         })
 
@@ -71,6 +69,11 @@ class FragmentTagList : Fragment() {
         super.onDetach()
     }
 
+    private fun setContinueButtonVisibility() {
+        continueButton?.visibility =
+            if (tags.any { it.isClicked }) View.VISIBLE else View.GONE
+    }
+
     interface ContinueButtonClickListener {
         fun onContinueClicked()
     }
@@ -79,6 +82,7 @@ class FragmentTagList : Fragment() {
     fun updateData(repoTags: List<Tag>) {
         tags = repoTags.toMutableList()
         tags.sortBy { !it.isClicked }
+        setContinueButtonVisibility()
         adapter?.bindTags(tags)
     }
 
